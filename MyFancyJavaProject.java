@@ -3,10 +3,10 @@ package structural;
 
 class Rectangle
 {
- public double l;
+ public double L;
  public double w;
- public Rectangle(double l, double w) {
-  this.l = l;
+ public Rectangle(double L, double w) {
+  this.L = L;
   this.w = w;
  }
 
@@ -32,7 +32,7 @@ class Calculator
  public double getArea(Rectangle r)
  {
   rectangle=r;
-  return rectangle.l * rectangle.w;
+  return rectangle.L * rectangle.w;
  }
 }
 
@@ -49,10 +49,10 @@ class CalculatorAdapter
   triangle=t;
 
   //Area of Triangle=0.5*base*height
-  double l = triangle.b;
+  double L = triangle.b;
   double w = 0.5*triangle.h;
 
-  Rectangle r = new Rectangle(l,w);
+  Rectangle r = new Rectangle(L,w);
   return calculator.getArea(r);
  }
 
